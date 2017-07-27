@@ -12,7 +12,7 @@ Class View
             'cache' => false,
         ]);
     }
-    public function render($filename, $data = null)
+    public function render($filename, $data = array())
     {
 
         echo $this->twig->render($filename.'.html', $data);
